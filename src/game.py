@@ -34,8 +34,9 @@ class Game:
         else:
             print(f"Player and dealer tie with {player_card}")
             self.tie_count += 1
-        self.player_hand.append(self.deck.draw())
-        self.dealer_hand.append(self.deck.draw())
+        if self.deck.cards:
+            self.player_hand.append(self.deck.draw())
+            self.dealer_hand.append(self.deck.draw())
         self.total_played += 1
 
     def __initialize_players_hands(self):
