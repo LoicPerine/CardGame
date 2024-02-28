@@ -2,8 +2,8 @@ from enum import StrEnum
 
 
 class CardSuits(StrEnum):
-    CLUBS = "Clubs"
-    DIAMONDS = "Diamonds"
+    CLUBS = "Clubs" 
+    DIAMONDS = "Diamonds" 
     HEARTS = "Hearts"
     SPADES = "Spades"
 
