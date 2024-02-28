@@ -4,6 +4,7 @@ from enums import CardSuits, CardValues
 
 class Deck:
     cards: list[Card]
+    
     def __init__(self):
         self.cards = [Card(suit, rank) for suit in CardSuits for rank in CardValues]
         self.shuffle()
