@@ -14,7 +14,7 @@ def main():
 def get_played_card_index(game:Game)->int:
     print("Your cards:", game.player_hand)
     print()
-    while( (val := int(input("Choose a card to play: ")) > len(game.player_hand)) ):
+    while( (val := int(input("Choose a card to play: ")) > len(game.player_hand)) or val < 0 ):
         print("Invalid card index. Please try again.")
         print()
         print("Your cards:", game.player_hand)
